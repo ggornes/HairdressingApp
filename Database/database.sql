@@ -196,20 +196,47 @@ ENGINE = INNODB;
 
 
 
--- Seed face_shapes table as described by the client
-INSERT INTO hair_project_db.face_shapes(`shape_name`)
-VALUES
-    ('heart_shaped'), ('square'), ('rectangular'), ('diamond'), ('triangular'), ('inverted_triangular'), ('round'), ('oval'), ('oblong')
-;
+INSERT INTO hair_project_db.colours(`id`, `colour_name`, `colour_hash`)
+VALUES 
+(1, 'very_light_blonde','#'),
+(2, 'light_blonde', '#'),
+(3, 'medium_blonde', '#'),
+(4, 'dark_blond', '#'),
+(5, 'light_brown', '#'),
+(6, 'medium_brown', '#'),
+(7, 'dark_brown', '#'),
+(8, 'black/brown', '#'), 
+(9, 'dark_black/brown', '#'),
+(10, 'black', '#');
 
--- Seed skin_tones table as described by the client
-INSERT INTO hair_project_db.skin_tones(`skin_tone_name`)
+INSERT INTO hair_project_db.face_shapes(`id`,`shape_name`,)
 VALUES
-    ('very_fair'), ('fair'), ('olive'), ('light_brown'), ('brown'), ('dark_brown'), ('black_brown')
-;
+(1, 'heart'), 
+(2, 'square'), 
+(3,'rectangular'), 
+(4, 'diamond'),
+(5, 'triangular'),
+(6, 'inverted_triangular');
+
+INSERT INTO  hair_project_db.skin_tones(`id`, `skin_tone_name`)
+VALUES
+(1, 'fair'),
+(2, 'olive'),
+(3, 'light_brown'),
+(4, 'brown'),
+(5, 'dark_brown'),
+(6, 'black_brown');
+
+INSERT INTO  hair_project_db.hair_lengths(`id`, `hair_length_id`, `link_name`, `link_url`)
+VALUES 
+(1, 'forme_massive'),
+(2, 'forme_degradee'),
+(3, 'forme_progressive'),
+(4, 'forme_uniforne');
+
+
 
 
 
 -- TODO
--- Create skin_tone_colour_id on SKIN_TONES table and link it co COLOURS table
--- Seed tables
+-- just waiting for URL's to insert then can upload rest if seeded tables
