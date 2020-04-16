@@ -234,9 +234,35 @@ VALUES
 (3, 'forme_progressive'),
 (4, 'forme_uniforne');
 
+INSERT INTO hair_project_db.face_shape_links(`id`, `face_shape_id`, `link_name`, `link_url`)
+VALUES 
+(1, 'faceShapeId', 'linkName', 'linkUrl'),
+(2, 'faceShapeId', 'linkName', 'linkUrl'),
+(3, 'faceShapeId', 'linkName', 'linkUrl'),
+(4, 'faceShapeId', 'linkName', 'linkUrl');
 
+INSERT INTO hair_project_db.hair_style_links(`id`, `hair_style_id`, `link_name`, `link_url`)
+VALUES 
+(1, 'HairStyleId', 'linkName', 'linkUrl'),
+(2, 'HairStyleId', 'linkName', 'linkUrl'),
+(3, 'HairStyleId', 'linkName', 'linkUrl'),
+(4, 'HairStyleId', 'linkName', 'linkUrl');
+
+INSERT INTO hair_project_db.hair_length_links(`id`, `hair_length_id`, `link_name`, `link_url`)
+VALUES
+(1, 'hairLengthId', 'linkName', 'linkUrl'),
+(2, 'hairLengthId', 'linkName', 'linkUrl'),
+(3, 'hairLengthId', 'linkName', 'linkUrl'),
+(4, 'hairLengthId', 'linkName', 'linkUrl');
+
+INSERT INTO hair_project_db.skis_tone_links((`id`, `skin_tone_id`, `link_name`, `link_url`)
+VALUES
+(1, 'skinToneId', 'linkName', 'linkUrl'),
+(2, 'skinToneId', 'linkName', 'linkUrl'),
+(3, 'skinToneId', 'linkName', 'linkUrl'),
+(4, 'skinToneId', 'linkName', 'linkUrl');
 
 
 
 -- TODO
--- just waiting for URL's to insert then can upload rest if seeded tables
+-- waiting for client to supply example images and more information abot hair styles needed to add to links table
